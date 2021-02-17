@@ -1,0 +1,1206 @@
+[
+{
+  "model": "blog.blogpagegalleryimage",
+  "pk": 2,
+  "fields": {
+    "sort_order": 0,
+    "page": 6,
+    "image": 3,
+    "caption": ""
+  }
+},
+{
+  "model": "wagtailcore.site",
+  "pk": 2,
+  "fields": {
+    "hostname": "localhost",
+    "port": 80,
+    "site_name": "",
+    "root_page": 3,
+    "is_default_site": true
+  }
+},
+{
+  "model": "wagtailcore.locale",
+  "pk": 1,
+  "fields": {
+    "language_code": "en"
+  }
+},
+{
+  "model": "wagtailcore.collection",
+  "pk": 1,
+  "fields": {
+    "path": "0001",
+    "depth": 1,
+    "numchild": 0,
+    "name": "Root"
+  }
+},
+{
+  "model": "wagtailcore.workflowpage",
+  "pk": 1,
+  "fields": {
+    "workflow": 1
+  }
+},
+{
+  "model": "wagtailcore.workflowtask",
+  "pk": 1,
+  "fields": {
+    "sort_order": 0,
+    "workflow": 1,
+    "task": 1
+  }
+},
+{
+  "model": "wagtailcore.task",
+  "pk": 1,
+  "fields": {
+    "name": "Moderators approval",
+    "content_type": [
+      "wagtailcore",
+      "groupapprovaltask"
+    ],
+    "active": true
+  }
+},
+{
+  "model": "wagtailcore.workflow",
+  "pk": 1,
+  "fields": {
+    "name": "Moderators approval",
+    "active": true
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "openstack",
+    "slug": "openstack"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 1,
+  "fields": {
+    "tag": 1,
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": 2
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "Moderators",
+    "permissions": [
+      [
+        "access_admin",
+        "wagtailadmin",
+        "admin"
+      ],
+      [
+        "add_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "change_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "delete_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "add_image",
+        "wagtailimages",
+        "image"
+      ],
+      [
+        "change_image",
+        "wagtailimages",
+        "image"
+      ],
+      [
+        "delete_image",
+        "wagtailimages",
+        "image"
+      ]
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 2,
+  "fields": {
+    "name": "Editors",
+    "permissions": [
+      [
+        "access_admin",
+        "wagtailadmin",
+        "admin"
+      ],
+      [
+        "add_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "change_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "delete_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "add_image",
+        "wagtailimages",
+        "image"
+      ],
+      [
+        "change_image",
+        "wagtailimages",
+        "image"
+      ],
+      [
+        "delete_image",
+        "wagtailimages",
+        "image"
+      ]
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$ntM4eFcKQvNU$M3JMvQtVgTHuBgLpXDkj3KHHvFhVgJ+Y++FvNosKtmc=",
+    "last_login": "2021-01-31T14:07:43.656Z",
+    "is_superuser": true,
+    "username": "celia",
+    "first_name": "",
+    "last_name": "",
+    "email": "cgarmai95@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-01-23T10:39:43.174Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 1,
+  "fields": {
+    "content_type": [
+      "home",
+      "homepage"
+    ],
+    "label": "Home",
+    "action": "wagtail.edit",
+    "data_json": "\"\"",
+    "timestamp": "2021-01-23T10:46:52.634Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 3,
+    "revision": 1
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 2,
+  "fields": {
+    "content_type": [
+      "home",
+      "homepage"
+    ],
+    "label": "Home",
+    "action": "wagtail.publish",
+    "data_json": "null",
+    "timestamp": "2021-01-23T10:46:52.658Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 3,
+    "revision": 1
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 3,
+  "fields": {
+    "content_type": [
+      "home",
+      "homepage"
+    ],
+    "label": "Celia",
+    "action": "wagtail.edit",
+    "data_json": "\"\"",
+    "timestamp": "2021-01-23T10:49:28.957Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 3,
+    "revision": 2
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 4,
+  "fields": {
+    "content_type": [
+      "home",
+      "homepage"
+    ],
+    "label": "Celia",
+    "action": "wagtail.rename",
+    "data_json": "{\"title\": {\"old\": \"Home\", \"new\": \"Celia\"}}",
+    "timestamp": "2021-01-23T10:49:28.980Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": false,
+    "deleted": false,
+    "page": 3,
+    "revision": 2
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 5,
+  "fields": {
+    "content_type": [
+      "home",
+      "homepage"
+    ],
+    "label": "Celia",
+    "action": "wagtail.publish",
+    "data_json": "{\"title\": {\"old\": \"Home\", \"new\": \"Celia\"}}",
+    "timestamp": "2021-01-23T10:49:28.984Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 3,
+    "revision": 2
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 6,
+  "fields": {
+    "content_type": [
+      "home",
+      "homepage"
+    ],
+    "label": "Celia Garcia Marquez",
+    "action": "wagtail.edit",
+    "data_json": "\"\"",
+    "timestamp": "2021-01-23T10:51:42.815Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 3,
+    "revision": 3
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 7,
+  "fields": {
+    "content_type": [
+      "home",
+      "homepage"
+    ],
+    "label": "Celia Garcia Marquez",
+    "action": "wagtail.rename",
+    "data_json": "{\"title\": {\"old\": \"Celia\", \"new\": \"Celia Garcia Marquez\"}}",
+    "timestamp": "2021-01-23T10:51:42.845Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": false,
+    "deleted": false,
+    "page": 3,
+    "revision": 3
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 8,
+  "fields": {
+    "content_type": [
+      "home",
+      "homepage"
+    ],
+    "label": "Celia Garcia Marquez",
+    "action": "wagtail.publish",
+    "data_json": "{\"title\": {\"old\": \"Celia\", \"new\": \"Celia Garcia Marquez\"}}",
+    "timestamp": "2021-01-23T10:51:42.848Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 3,
+    "revision": 3
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 9,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogindexpage"
+    ],
+    "label": "Celi's blog",
+    "action": "wagtail.create",
+    "data_json": "\"\"",
+    "timestamp": "2021-01-23T11:04:24.535Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 4,
+    "revision": null
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 10,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogindexpage"
+    ],
+    "label": "Celi's blog",
+    "action": "wagtail.publish",
+    "data_json": "null",
+    "timestamp": "2021-01-23T11:04:24.574Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 4,
+    "revision": 4
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 11,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "label": "Blog",
+    "action": "wagtail.create",
+    "data_json": "\"\"",
+    "timestamp": "2021-01-23T11:28:38.450Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 5,
+    "revision": null
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 12,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "label": "Blog",
+    "action": "wagtail.publish",
+    "data_json": "null",
+    "timestamp": "2021-01-23T11:28:38.517Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 5,
+    "revision": 5
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 13,
+  "fields": {
+    "content_type": [
+      "wagtailcore",
+      "page"
+    ],
+    "label": "Celi's blog",
+    "action": "wagtail.delete",
+    "data_json": "\"\"",
+    "timestamp": "2021-01-23T11:29:07.535Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": false,
+    "deleted": true,
+    "page": 4,
+    "revision": null
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 14,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "label": "Blog",
+    "action": "wagtail.edit",
+    "data_json": "\"\"",
+    "timestamp": "2021-01-23T11:29:19.102Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 5,
+    "revision": 6
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 15,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "label": "Blog",
+    "action": "wagtail.publish",
+    "data_json": "null",
+    "timestamp": "2021-01-23T11:29:19.144Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 5,
+    "revision": 6
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 16,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "label": "Blog",
+    "action": "wagtail.edit",
+    "data_json": "\"\"",
+    "timestamp": "2021-01-23T11:30:01.435Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 5,
+    "revision": 7
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 17,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "label": "Blog",
+    "action": "wagtail.publish",
+    "data_json": "null",
+    "timestamp": "2021-01-23T11:30:01.459Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": false,
+    "deleted": false,
+    "page": 5,
+    "revision": 7
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 18,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "label": "Primera entrada",
+    "action": "wagtail.create",
+    "data_json": "\"\"",
+    "timestamp": "2021-01-23T11:33:10.381Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 6,
+    "revision": null
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 19,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "label": "Primera entrada",
+    "action": "wagtail.publish",
+    "data_json": "null",
+    "timestamp": "2021-01-23T11:33:10.431Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 6,
+    "revision": 8
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 20,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "label": "Blog",
+    "action": "wagtail.edit",
+    "data_json": "\"\"",
+    "timestamp": "2021-01-23T11:36:45.482Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 5,
+    "revision": 9
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 21,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "label": "Blog",
+    "action": "wagtail.publish",
+    "data_json": "null",
+    "timestamp": "2021-01-23T11:36:45.505Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 5,
+    "revision": 9
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 22,
+  "fields": {
+    "content_type": [
+      "home",
+      "homepage"
+    ],
+    "label": "Celia Garcia Marquez",
+    "action": "wagtail.edit",
+    "data_json": "\"\"",
+    "timestamp": "2021-01-23T12:24:03.643Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 3,
+    "revision": 10
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 23,
+  "fields": {
+    "content_type": [
+      "home",
+      "homepage"
+    ],
+    "label": "Celia Garcia Marquez",
+    "action": "wagtail.publish",
+    "data_json": "null",
+    "timestamp": "2021-01-23T12:24:03.665Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 3,
+    "revision": 10
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 24,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "label": "Openstack",
+    "action": "wagtail.edit",
+    "data_json": "\"\"",
+    "timestamp": "2021-01-23T12:35:16.996Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 6,
+    "revision": 11
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 25,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "label": "Openstack",
+    "action": "wagtail.rename",
+    "data_json": "{\"title\": {\"old\": \"Primera entrada\", \"new\": \"Openstack\"}}",
+    "timestamp": "2021-01-23T12:35:17.025Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": false,
+    "deleted": false,
+    "page": 6,
+    "revision": 11
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 26,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "label": "Openstack",
+    "action": "wagtail.publish",
+    "data_json": "{\"title\": {\"old\": \"Primera entrada\", \"new\": \"Openstack\"}}",
+    "timestamp": "2021-01-23T12:35:17.028Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 6,
+    "revision": 11
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 27,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "label": "Openstack",
+    "action": "wagtail.edit",
+    "data_json": "\"\"",
+    "timestamp": "2021-01-23T12:42:12.515Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 6,
+    "revision": 12
+  }
+},
+{
+  "model": "wagtailcore.pagelogentry",
+  "pk": 28,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "label": "Openstack",
+    "action": "wagtail.publish",
+    "data_json": "null",
+    "timestamp": "2021-01-23T12:42:12.542Z",
+    "user": [
+      "celia"
+    ],
+    "content_changed": true,
+    "deleted": false,
+    "page": 6,
+    "revision": 12
+  }
+},
+{
+  "model": "wagtailcore.groupapprovaltask",
+  "pk": 1,
+  "fields": {
+    "groups": [
+      [
+        "Moderators"
+      ]
+    ]
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 1,
+  "fields": {
+    "page": 3,
+    "submitted_for_moderation": false,
+    "created_at": "2021-01-23T10:46:52.624Z",
+    "user": [
+      "celia"
+    ],
+    "content_json": "{\"pk\": 3, \"path\": \"00010001\", \"depth\": 2, \"numchild\": 0, \"translation_key\": \"f6c37be3-3b56-4f26-af25-896a2fce6c22\", \"locale\": 1, \"title\": \"Home\", \"draft_title\": \"Home\", \"slug\": \"home\", \"content_type\": 2, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/\", \"owner\": null, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"locked_at\": null, \"locked_by\": null, \"first_published_at\": null, \"last_published_at\": null, \"latest_revision_created_at\": null, \"live_revision\": null, \"alias_of\": null, \"body\": \"<p>HOla</p>\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 2,
+  "fields": {
+    "page": 3,
+    "submitted_for_moderation": false,
+    "created_at": "2021-01-23T10:49:28.917Z",
+    "user": [
+      "celia"
+    ],
+    "content_json": "{\"pk\": 3, \"path\": \"00010001\", \"depth\": 2, \"numchild\": 0, \"translation_key\": \"f6c37be3-3b56-4f26-af25-896a2fce6c22\", \"locale\": 1, \"title\": \"Celia\", \"draft_title\": \"Home\", \"slug\": \"home\", \"content_type\": 2, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/\", \"owner\": null, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"locked_at\": null, \"locked_by\": null, \"first_published_at\": \"2021-01-23T10:46:52.642Z\", \"last_published_at\": \"2021-01-23T10:46:52.642Z\", \"latest_revision_created_at\": \"2021-01-23T10:46:52.624Z\", \"live_revision\": 1, \"alias_of\": null, \"body\": \"<h2>Hola</h2>\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 3,
+  "fields": {
+    "page": 3,
+    "submitted_for_moderation": false,
+    "created_at": "2021-01-23T10:51:42.775Z",
+    "user": [
+      "celia"
+    ],
+    "content_json": "{\"pk\": 3, \"path\": \"00010001\", \"depth\": 2, \"numchild\": 0, \"translation_key\": \"f6c37be3-3b56-4f26-af25-896a2fce6c22\", \"locale\": 1, \"title\": \"Celia Garcia Marquez\", \"draft_title\": \"Celia\", \"slug\": \"home\", \"content_type\": 2, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/\", \"owner\": null, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"locked_at\": null, \"locked_by\": null, \"first_published_at\": \"2021-01-23T10:46:52.642Z\", \"last_published_at\": \"2021-01-23T10:49:28.965Z\", \"latest_revision_created_at\": \"2021-01-23T10:49:28.917Z\", \"live_revision\": 2, \"alias_of\": null, \"body\": \"<h2>Celia Garc\\u00eda M\\u00e1rquez</h2><h3>Bienvenido a la p\\u00e1gina de inicio.</h3>\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 5,
+  "fields": {
+    "page": 5,
+    "submitted_for_moderation": false,
+    "created_at": "2021-01-23T11:28:38.471Z",
+    "user": [
+      "celia"
+    ],
+    "content_json": "{\"pk\": 5, \"path\": \"000100010002\", \"depth\": 3, \"numchild\": 0, \"translation_key\": \"ac59ff06-9c4e-4db4-97ea-4d7a5c9f4485\", \"locale\": 1, \"title\": \"Blog\", \"draft_title\": \"Blog\", \"slug\": \"blogs\", \"content_type\": 39, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/blogs/\", \"owner\": 1, \"seo_title\": \"blog\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"locked_at\": null, \"locked_by\": null, \"first_published_at\": null, \"last_published_at\": null, \"latest_revision_created_at\": null, \"live_revision\": null, \"alias_of\": null, \"date\": \"2021-01-23\", \"intro\": \"Hello World\", \"body\": \"<p>Estas en el blog de Celia</p>\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 6,
+  "fields": {
+    "page": 5,
+    "submitted_for_moderation": false,
+    "created_at": "2021-01-23T11:29:19.094Z",
+    "user": [
+      "celia"
+    ],
+    "content_json": "{\"pk\": 5, \"path\": \"000100010002\", \"depth\": 3, \"numchild\": 0, \"translation_key\": \"ac59ff06-9c4e-4db4-97ea-4d7a5c9f4485\", \"locale\": 1, \"title\": \"Blog\", \"draft_title\": \"Blog\", \"slug\": \"blog\", \"content_type\": 39, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/blogs/\", \"owner\": 1, \"seo_title\": \"blog\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"locked_at\": null, \"locked_by\": null, \"first_published_at\": \"2021-01-23T11:28:38.499Z\", \"last_published_at\": \"2021-01-23T11:28:38.499Z\", \"latest_revision_created_at\": \"2021-01-23T11:28:38.471Z\", \"live_revision\": 5, \"alias_of\": null, \"date\": \"2021-01-23\", \"intro\": \"Hello World\", \"body\": \"<p>Estas en el blog de Celia</p>\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 7,
+  "fields": {
+    "page": 5,
+    "submitted_for_moderation": false,
+    "created_at": "2021-01-23T11:30:01.425Z",
+    "user": [
+      "celia"
+    ],
+    "content_json": "{\"pk\": 5, \"path\": \"000100010002\", \"depth\": 3, \"numchild\": 0, \"translation_key\": \"ac59ff06-9c4e-4db4-97ea-4d7a5c9f4485\", \"locale\": 1, \"title\": \"Blog\", \"draft_title\": \"Blog\", \"slug\": \"blog\", \"content_type\": 39, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/blog/\", \"owner\": 1, \"seo_title\": \"blog\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"locked_at\": null, \"locked_by\": null, \"first_published_at\": \"2021-01-23T11:28:38.499Z\", \"last_published_at\": \"2021-01-23T11:29:19.111Z\", \"latest_revision_created_at\": \"2021-01-23T11:29:19.094Z\", \"live_revision\": 6, \"alias_of\": null, \"date\": \"2021-01-23\", \"intro\": \"Hello World\", \"body\": \"<p>Estas en el blog de Celia</p>\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 8,
+  "fields": {
+    "page": 6,
+    "submitted_for_moderation": false,
+    "created_at": "2021-01-23T11:33:10.399Z",
+    "user": [
+      "celia"
+    ],
+    "content_json": "{\"pk\": 6, \"path\": \"0001000100020001\", \"depth\": 4, \"numchild\": 0, \"translation_key\": \"3fdc715d-d9b0-4c7d-bc69-bce910270ae6\", \"locale\": 1, \"title\": \"Primera entrada\", \"draft_title\": \"Primera entrada\", \"slug\": \"primera-entrada\", \"content_type\": 39, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/blog/primera-entrada/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"locked_at\": null, \"locked_by\": null, \"first_published_at\": null, \"last_published_at\": null, \"latest_revision_created_at\": null, \"live_revision\": null, \"alias_of\": null, \"date\": \"2021-01-23\", \"intro\": \"Primera entrada del blog\", \"body\": \"<p>Esta es la primera entrada del blog</p>\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 9,
+  "fields": {
+    "page": 5,
+    "submitted_for_moderation": false,
+    "created_at": "2021-01-23T11:36:45.472Z",
+    "user": [
+      "celia"
+    ],
+    "content_json": "{\"pk\": 5, \"path\": \"000100010002\", \"depth\": 3, \"numchild\": 1, \"translation_key\": \"ac59ff06-9c4e-4db4-97ea-4d7a5c9f4485\", \"locale\": 1, \"title\": \"Blog\", \"draft_title\": \"Blog\", \"slug\": \"blog\", \"content_type\": 39, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/blog/\", \"owner\": 1, \"seo_title\": \"blog\", \"show_in_menus\": true, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"locked_at\": null, \"locked_by\": null, \"first_published_at\": \"2021-01-23T11:28:38.499Z\", \"last_published_at\": \"2021-01-23T11:30:01.444Z\", \"latest_revision_created_at\": \"2021-01-23T11:30:01.425Z\", \"live_revision\": 7, \"alias_of\": null, \"date\": \"2021-01-23\", \"intro\": \"Hello World\", \"body\": \"<p>Estas en el blog de Celia</p>\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 10,
+  "fields": {
+    "page": 3,
+    "submitted_for_moderation": false,
+    "created_at": "2021-01-23T12:24:03.631Z",
+    "user": [
+      "celia"
+    ],
+    "content_json": "{\"pk\": 3, \"path\": \"00010001\", \"depth\": 2, \"numchild\": 1, \"translation_key\": \"f6c37be3-3b56-4f26-af25-896a2fce6c22\", \"locale\": 1, \"title\": \"Celia Garcia Marquez\", \"draft_title\": \"Celia Garcia Marquez\", \"slug\": \"home\", \"content_type\": 2, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/\", \"owner\": null, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"locked_at\": null, \"locked_by\": null, \"first_published_at\": \"2021-01-23T10:46:52.642Z\", \"last_published_at\": \"2021-01-23T10:51:42.825Z\", \"latest_revision_created_at\": \"2021-01-23T10:51:42.775Z\", \"live_revision\": 3, \"alias_of\": null, \"body\": \"<h2>Celia Garc\\u00eda M\\u00e1rquez</h2><h3>Bienvenido a la p\\u00e1gina de inicio.</h3><p></p><embed alt=\\\"avatar.jpg\\\" embedtype=\\\"image\\\" format=\\\"left\\\" id=\\\"1\\\"/><p></p>\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 11,
+  "fields": {
+    "page": 6,
+    "submitted_for_moderation": false,
+    "created_at": "2021-01-23T12:35:16.965Z",
+    "user": [
+      "celia"
+    ],
+    "content_json": "{\"pk\": 6, \"path\": \"0001000100020001\", \"depth\": 4, \"numchild\": 0, \"translation_key\": \"3fdc715d-d9b0-4c7d-bc69-bce910270ae6\", \"locale\": 1, \"title\": \"Openstack\", \"draft_title\": \"Primera entrada\", \"slug\": \"primera-entrada\", \"content_type\": 39, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/blog/primera-entrada/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"locked_at\": null, \"locked_by\": null, \"first_published_at\": \"2021-01-23T11:33:10.416Z\", \"last_published_at\": \"2021-01-23T11:33:10.416Z\", \"latest_revision_created_at\": \"2021-01-23T11:33:10.399Z\", \"live_revision\": 8, \"alias_of\": null, \"date\": \"2021-01-23\", \"intro\": \"Primera entrada del blog\", \"body\": \"<p>Esta es la primera entrada del blog.</p><p>Este proyecto est\\u00e1 implantado sobre Openstack.</p>\", \"gallery_images\": [{\"pk\": null, \"sort_order\": 0, \"page\": 6, \"image\": 2, \"caption\": \"\"}]}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 12,
+  "fields": {
+    "page": 6,
+    "submitted_for_moderation": false,
+    "created_at": "2021-01-23T12:42:12.488Z",
+    "user": [
+      "celia"
+    ],
+    "content_json": "{\"pk\": 6, \"path\": \"0001000100020001\", \"depth\": 4, \"numchild\": 0, \"translation_key\": \"3fdc715d-d9b0-4c7d-bc69-bce910270ae6\", \"locale\": 1, \"title\": \"Openstack\", \"draft_title\": \"Openstack\", \"slug\": \"primera-entrada\", \"content_type\": 39, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/blog/primera-entrada/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"locked_at\": null, \"locked_by\": null, \"first_published_at\": \"2021-01-23T11:33:10.416Z\", \"last_published_at\": \"2021-01-23T12:35:17.008Z\", \"latest_revision_created_at\": \"2021-01-23T12:35:16.965Z\", \"live_revision\": 11, \"alias_of\": null, \"date\": \"2021-01-23\", \"intro\": \"Primera entrada del blog\", \"body\": \"<p>Esta es la primera entrada del blog.</p><p>Este proyecto est\\u00e1 implantado sobre Openstack.</p>\", \"gallery_images\": [{\"pk\": null, \"sort_order\": 0, \"page\": 6, \"image\": 3, \"caption\": \"\"}]}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 1,
+  "fields": {
+    "path": "0001",
+    "depth": 1,
+    "numchild": 1,
+    "translation_key": "6fcd6013-013e-490f-acbf-23222a2687bd",
+    "locale": 1,
+    "title": "Root",
+    "draft_title": "Root",
+    "slug": "root",
+    "content_type": [
+      "wagtailcore",
+      "page"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "locked_at": null,
+    "locked_by": null,
+    "first_published_at": null,
+    "last_published_at": null,
+    "latest_revision_created_at": null,
+    "live_revision": null,
+    "alias_of": null
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 3,
+  "fields": {
+    "path": "00010001",
+    "depth": 2,
+    "numchild": 1,
+    "translation_key": "f6c37be3-3b56-4f26-af25-896a2fce6c22",
+    "locale": 1,
+    "title": "Celia Garcia Marquez",
+    "draft_title": "Celia Garcia Marquez",
+    "slug": "home",
+    "content_type": [
+      "home",
+      "homepage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "locked_at": null,
+    "locked_by": null,
+    "first_published_at": "2021-01-23T10:46:52.642Z",
+    "last_published_at": "2021-01-23T12:24:03.651Z",
+    "latest_revision_created_at": "2021-01-23T12:24:03.631Z",
+    "live_revision": 10,
+    "alias_of": null
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 5,
+  "fields": {
+    "path": "000100010002",
+    "depth": 3,
+    "numchild": 1,
+    "translation_key": "ac59ff06-9c4e-4db4-97ea-4d7a5c9f4485",
+    "locale": 1,
+    "title": "Blog",
+    "draft_title": "Blog",
+    "slug": "blog",
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/blog/",
+    "owner": [
+      "celia"
+    ],
+    "seo_title": "blog",
+    "show_in_menus": true,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "locked_at": null,
+    "locked_by": null,
+    "first_published_at": "2021-01-23T11:28:38.499Z",
+    "last_published_at": "2021-01-23T11:36:45.491Z",
+    "latest_revision_created_at": "2021-01-23T11:36:45.472Z",
+    "live_revision": 9,
+    "alias_of": null
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 6,
+  "fields": {
+    "path": "0001000100020001",
+    "depth": 4,
+    "numchild": 0,
+    "translation_key": "3fdc715d-d9b0-4c7d-bc69-bce910270ae6",
+    "locale": 1,
+    "title": "Openstack",
+    "draft_title": "Openstack",
+    "slug": "primera-entrada",
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/blog/primera-entrada/",
+    "owner": [
+      "celia"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "locked_at": null,
+    "locked_by": null,
+    "first_published_at": "2021-01-23T11:33:10.416Z",
+    "last_published_at": "2021-01-23T12:42:12.525Z",
+    "latest_revision_created_at": "2021-01-23T12:42:12.488Z",
+    "live_revision": 12,
+    "alias_of": null
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 1,
+  "fields": {
+    "collection": 1,
+    "title": "avatar.jpg",
+    "file": "original_images/avatar.jpg",
+    "width": 1440,
+    "height": 1440,
+    "created_at": "2021-01-23T12:23:47.998Z",
+    "uploaded_by_user": [
+      "celia"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 195188,
+    "file_hash": "f9c8cea329b7297f056ad95c4f8661453a8ea861"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 2,
+  "fields": {
+    "collection": 1,
+    "title": "openstack.jpg",
+    "file": "original_images/openstack.jpg",
+    "width": 1200,
+    "height": 200,
+    "created_at": "2021-01-23T12:34:20.131Z",
+    "uploaded_by_user": [
+      "celia"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 39842,
+    "file_hash": "79cde520030387d4b26ec1c575ebde0fcae6111f"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 3,
+  "fields": {
+    "collection": 1,
+    "title": "openstack.jpg",
+    "file": "original_images/openstack_P58UNT5.jpg",
+    "width": 1200,
+    "height": 200,
+    "created_at": "2021-01-23T12:41:48.747Z",
+    "uploaded_by_user": [
+      "celia"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 39842,
+    "file_hash": "79cde520030387d4b26ec1c575ebde0fcae6111f"
+  }
+},
+{
+  "model": "wagtailusers.userprofile",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "celia"
+    ],
+    "submitted_notifications": true,
+    "approved_notifications": true,
+    "rejected_notifications": true,
+    "preferred_language": "",
+    "current_time_zone": "",
+    "avatar": ""
+  }
+},
+{
+  "model": "blog.blogpage",
+  "pk": 5,
+  "fields": {
+    "date": "2021-01-23",
+    "intro": "Hello World",
+    "body": "<p>Estas en el blog de Celia</p>"
+  }
+},
+{
+  "model": "blog.blogpage",
+  "pk": 6,
+  "fields": {
+    "date": "2021-01-23",
+    "intro": "Primera entrada del blog",
+    "body": "<p>Esta es la primera entrada del blog.</p><p>Este proyecto está implantado sobre Openstack.</p>"
+  }
+},
+{
+  "model": "home.homepage",
+  "pk": 3,
+  "fields": {
+    "body": "<h2>Celia García Márquez</h2><h3>Bienvenido a la página de inicio.</h3><p></p><embed alt=\"avatar.jpg\" embedtype=\"image\" format=\"left\" id=\"1\"/><p></p>"
+  }
+}
+]
